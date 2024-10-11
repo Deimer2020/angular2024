@@ -1,0 +1,63 @@
+<p>actualizar-component works!</p>
+
+<p>proyectos works!</p>
+
+
+<form class="form-group row">
+    <div class="form-group col-md-3">
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Nombre"
+        class="form-control"
+        [(ngModel)]="cuadroNombre"
+      />
+    </div>
+    <div class="form-group col-md-3">
+      <label for="cargo">Apellido</label>
+      <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        placeholder="Apellido"
+        class="form-control"
+        [(ngModel)]="cuadroApellido"
+      />
+    </div>
+    <div class="form-group col-md-3">
+      <label for="cargo">Cargo</label>
+      <input
+        type="text"
+        name="cargo"
+        id="cargo"
+        placeholder="Cargo"
+        class="form-control"
+        [(ngModel)]="cuadroCargo"
+      />
+    </div>
+    <div class="form group col-md-3">
+      <label for="salario">Salario</label>
+      <input
+        type="number"
+        name="salario"
+        id="salario"
+        placeholder="Salario"
+        class="form-control"
+        [(ngModel)]="cuadroSalario"
+      />
+    </div>
+  </form>
+
+<br />
+<div class="container">
+  <button type="submit" class="btn btn-success"  (click)="agregarEmpleado()">
+    Actualizar 
+  </button>
+</div>
+
+
+<div style="text-align: center;">
+    <button type="submit" class="btn btn-success" (click)="volverHome()">ir a Home</button>
+</div>
